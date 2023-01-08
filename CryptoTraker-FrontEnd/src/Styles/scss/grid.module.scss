@@ -1,0 +1,147 @@
+@use './button.module' as *;
+
+
+.grid-title-container {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 900;
+  color: #d5e4ff;
+  margin-bottom: 2vh;  
+}
+.start{
+  width: 40%;
+}
+.middle{
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  .grid-title {
+    display: block;
+    animation-name: Appear;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-timing-function: ease;
+    backface-visibility: hidden;
+    animation-fill-mode: backwards;  
+  }
+}
+.end{
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 0.3%;
+  row-gap: 3.2rem;
+
+  &__item {
+    width: 15vw;
+    height: 22vh;
+    border-radius: 3rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 4% 3% 0 6%;
+  
+    animation: Appear 2s ease-in-out .2s;
+    // animation-duration: 2s ;
+    // animation-delay: 0.7s;
+    // animation-timing-function: ease-in-out;
+    backface-visibility: hidden;
+    animation-fill-mode: backwards;
+    transition: all .5s ease-in-out;
+
+
+    &:hover {
+      background-color: rgb(56, 36, 92);
+
+      .btn-delete {
+        opacity: 1;
+      }
+    }
+
+
+    &__icon-container {
+      display: flex;
+      height: 2.3rem;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background-color: rgb(49, 27, 90);
+      opacity: .4;
+      border-radius: 3rem;
+      z-index: -1;
+    }
+
+    &__header {
+      color: #ffffff;
+      font-weight: 600;
+      font-size: 1.1vw;
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 4%;
+
+
+      img{
+          width: 1.3vw;
+          height: 2.6vh;
+      }
+    }
+
+    &__coinInfo {
+      color: #9ff3ec;
+      display: flex;
+      justify-content: flex-start;
+      width: 100%;
+      align-items:center;
+      margin-bottom: 0.3vw;
+      font-size: 1vw;
+      
+      &__currencySymbol{
+        color: #ce68f7;
+        margin-right: 2%;
+        font-weight: 600;
+        font-size: 1.1vw;
+      }
+
+      &__param {
+        color: #5edfff;
+        margin-right: 2%;
+        font-weight: 700;
+        font-size: 1.1vw;
+
+      }     
+    }
+
+    .delete-btn-container {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-top: .1vw;      
+    }
+
+  }
+}
+
+@keyframes Appear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31919.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CryptoTraker-BackEnd", "CryptoTraker-BackEnd\CryptoTraker-BackEnd.csproj", "{C9B87126-5B04-4FC5-92EE-B4B812A3917E}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "CryptoTraker-FrontEnd", "CryptoTraker-FrontEnd\CryptoTraker-FrontEnd.esproj", "{56B746CD-3A9C-4760-AB26-0254A76A1084}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C9B87126-5B04-4FC5-92EE-B4B812A3917E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9B87126-5B04-4FC5-92EE-B4B812A3917E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9B87126-5B04-4FC5-92EE-B4B812A3917E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9B87126-5B04-4FC5-92EE-B4B812A3917E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56B746CD-3A9C-4760-AB26-0254A76A1084}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56B746CD-3A9C-4760-AB26-0254A76A1084}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56B746CD-3A9C-4760-AB26-0254A76A1084}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{56B746CD-3A9C-4760-AB26-0254A76A1084}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56B746CD-3A9C-4760-AB26-0254A76A1084}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56B746CD-3A9C-4760-AB26-0254A76A1084}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B1E47C16-3803-4EFA-8D48-9B772E44AD20}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,27 @@
+@import './button.module.scss';
+
+.search {
+  height: 3.5rem;
+  border-radius: 10rem 0rem 0rem 10rem;
+  border: .1rem solid rgb(133, 81, 81);
+  border-width: .2rem 0rem .2rem .2rem;
+  width: 14%;
+  background: rgba(0, 0, 0, 0.7);
+  padding-left: 1rem;
+  color: rgb(226, 185, 0);
+  font-size: 1.7rem;
+  font-weight: 900;
+  box-shadow: 0 0 4rem rgb(0, 0, 0);
+  outline: none;
+
+  &:hover,
+  &:focus {
+    background: rgba(0, 0, 0, 0.8);
+    outline: none;
+
+    .btn-add {
+      display: none;
+    }
+  }
+
+}

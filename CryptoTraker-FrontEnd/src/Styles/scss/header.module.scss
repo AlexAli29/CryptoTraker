@@ -1,0 +1,151 @@
+.header {
+  position: relative;
+  height: 25vh;
+  background: url(../../assets/img/header-background1.jpg) center / cover no-repeat;
+  border-radius: 10rem;
+  letter-spacing: .8rem;
+
+
+
+ 
+
+  &__box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    &__upper{
+      display: flex;
+      justify-content: space-around;      
+      &__start{
+        height: 10vh;
+        width: 6vw;
+      }
+
+      &__center{
+        display: flex;
+        justify-content: center;
+        margin-left: 4vw;
+        margin-right: 5vw;
+        
+        &__title {
+
+          color: rgb(255, 255, 255);
+          font-size: 3vw;
+          text-shadow: .7rem .3rem 1rem #0e0753;
+          font-weight: 600;
+          animation-name: leftToRight;
+          animation-duration: 2s;
+          animation-delay: 0.5s;
+          animation-timing-function: ease;
+          backface-visibility: hidden;
+          animation-fill-mode: backwards;
+          margin-bottom: 3%;
+      
+        }
+      }
+
+      &__end{
+        justify-self: end;
+        position: relative;
+        border-radius:40px;     
+        color: rgb(255, 255, 255);
+        font-size: 1vw;
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 3.6vw;
+        height: 6.5vh;
+        animation: appear .3s ease-out 0.5s;
+        animation-fill-mode: backwards;
+        cursor: pointer;
+        
+        &:hover{
+          box-shadow: 0 0 20px 2px rgb(101, 101, 184);
+        }
+
+        &::before{
+          border-radius:40px;  
+          content: "";
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          background-color: rgba(67, 33, 146,0.3); 
+          backdrop-filter: blur(6px);  
+          z-index: -1;         
+        }
+
+        &__user{
+          width: 2.4vw;
+          height: 4.5vh;         
+          border-radius:100px;         
+        
+        }
+
+      
+      }
+
+    }
+
+
+    .search-container {
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      animation: BtnToUP .5s ease-out 1s;
+      animation-fill-mode: backwards;
+    }
+  }
+
+}
+
+
+
+
+
+
+@keyframes leftToRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  80% {
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0rem);
+  }
+}
+
+@keyframes BtnToUP {
+  0% {
+    opacity: 0;
+    transform: translateY(5rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}
+
+@keyframes appear {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}

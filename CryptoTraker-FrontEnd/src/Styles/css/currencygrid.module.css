@@ -1,0 +1,7 @@
+.currency-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  padding: 2rem;
+  justify-items: center;
+  row-gap: 2vh;
+}/*# sourceMappingURL=currencygrid.module.css.map */

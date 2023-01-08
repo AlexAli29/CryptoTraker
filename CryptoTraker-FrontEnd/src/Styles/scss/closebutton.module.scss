@@ -1,0 +1,42 @@
+.close-btn{
+  position: relative;
+  background:none;
+  color: brown;
+  border-radius:2rem;
+  width: 1.7rem;
+  height:1.7rem;
+  border:none;
+  display: inline-flex;
+  align-items:center;
+  justify-content: center;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgb(67, 33, 146);   
+    z-index: -1;
+    border-radius: .8rem;     
+    opacity: 0;   
+  }
+
+  &:hover{
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background-color: rgb(67, 33, 146);   
+      z-index: -1;
+      border-radius: .8rem;    
+      opacity: 1;    
+      transition: all 0.2 ease-in-out;
+    }
+  }
+}

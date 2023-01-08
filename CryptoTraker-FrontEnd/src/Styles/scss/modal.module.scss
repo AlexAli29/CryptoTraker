@@ -1,0 +1,45 @@
+.modal{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  bottom:0;
+  right: 0; 
+  background-color: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  transform: scale(0);
+
+  &__content{
+    padding: 1rem;    
+    background: linear-gradient(352deg, rgb(17, 2, 71) 15%, rgb(22, 4, 71) 66%);
+    border-radius:1.6rem;
+    width:34vw;
+    height: 37vh;
+    z-index: 1;
+
+    &__header{
+      display: flex;
+      justify-content: space-between;
+
+      &__middle{
+        color:aliceblue;
+        display: flex;
+        align-items:flex-start;
+        font-weight:700;
+      }
+
+      &__end{
+        display: flex;
+      }
+    }
+
+ 
+  }
+}
+
+
+.modal.active{
+  transform: scale(1);
+}
