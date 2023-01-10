@@ -1,5 +1,5 @@
 import React from 'react';
-import cl from "../../Styles/css/loginforminput.module.css"
+import cl from "../../Styles/scss/loginforminput.module.scss"
 
 const UserFormInput = ({ label, type, ...props }) => {
   return (

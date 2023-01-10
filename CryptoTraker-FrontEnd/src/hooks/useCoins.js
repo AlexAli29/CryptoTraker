@@ -7,7 +7,7 @@ export const useCoins = (tickers, currentCurrency) => {
 	// const currency = "USD";
 	useEffect(() => {
 		const tickerNames = tickers.join(",");
-		debugger
+		
 		if (!tickerNames) return;
 
 		axios

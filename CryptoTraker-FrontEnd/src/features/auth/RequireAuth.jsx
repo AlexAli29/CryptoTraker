@@ -1,4 +1,4 @@
-import { useLocation, Navigate, Outlet, useNavigate } from "react-router-dom"
+import { Outlet, useNavigate } from "react-router-dom"
 import { useSelector } from "react-redux"
 import { selectCurrentToken } from "./authSlice"
 import { useGetTokenMutation, useGetUserMutation } from "./authApiSlice";
@@ -26,7 +26,7 @@ const RequireAuth = () => {
         (userData) => {
 
           dispatch(setCredentials({ ...userData, }));
-         
+
           if ('error' in userData) {
             navigate('/login')
           }

@@ -1,8 +1,8 @@
 import React from "react";
-import clgrd from "../Styles/css/grid.module.css";
+import clgrd from "../Styles/scss/grid.module.scss";
 import GridItem from "./GridItem";
 import SetCurrencyButton from "./UI/SetCurrencyButton";
-import btn from "../Styles/css/button.module.css";
+import btn from "../Styles/scss/button.module.scss";
 import { AiFillCaretDown } from "react-icons/ai";
 const CoinsGrid = ({ coins, setActive, currentCurrency }) => {
 	return (

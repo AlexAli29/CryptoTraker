@@ -1,5 +1,5 @@
 import React from "react";
-import clgrd from "../Styles/css/grid.module.css";
+import clgrd from "../Styles/scss/grid.module.scss";
 import DeleteButton from "./UI/DeleteButton";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import { useRemoveCoinMutation } from "../features/auth/authApiSlice";
@@ -23,7 +23,6 @@ const GridItem = ({ coin }) => {
 
 	};
 
-	debugger
 	return (
 		<div className={clgrd["grid__item"]}>
 			<div className={clgrd["grid__item__header"]}>

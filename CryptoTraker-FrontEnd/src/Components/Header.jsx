@@ -1,8 +1,8 @@
 import React from "react";
-import cl from "../Styles/css/header.module.css";
+import cl from "../Styles/scss/header.module.scss";
 import AddButton from "./UI/AddButton";
 import Search from "./UI/Search";
-import clbtn from "../Styles/css/button.module.css";
+import clbtn from "../Styles/scss/button.module.scss";
 import { BiAddToQueue } from "react-icons/bi";
 import { useState } from "react";
 import { useAddCoinMutation } from "../features/auth/authApiSlice";

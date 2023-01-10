@@ -1,5 +1,5 @@
 import React from 'react';
-import crbtn from '../../Styles/css/currencybutton.module.css'
+import crbtn from '../../Styles/scss/currencybutton.module.scss'
 const CurrencyButton = ({ currentCurrency, currency, ...props }) => {
 
   const rootClasses = [crbtn.currencyButton]

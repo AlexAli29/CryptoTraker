@@ -1,5 +1,5 @@
 import React from 'react';
-import cl from '../../Styles/css/search.module.css'
+import cl from '../../Styles/scss/search.module.scss'
 
 const Search = ({ ...props }) => {
   return (

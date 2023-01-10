@@ -1,5 +1,5 @@
 import React from 'react';
-import crgr from '../Styles/css/currencygrid.module.css'
+import crgr from '../Styles/scss/currencygrid.module.scss'
 import CurrencyButton from './UI/CurrencyButton';
 import { useState } from 'react';
 

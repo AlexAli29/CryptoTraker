@@ -1,5 +1,5 @@
 import React from 'react';
-import cl from "../../Styles/css/loginbutton.module.css"
+import cl from "../../Styles/scss/loginbutton.module.scss"
 const LoginButton = ({ children }) => {
   return (
     <button className={cl.button}>

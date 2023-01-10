@@ -18,7 +18,7 @@ const RequireUnAuth = () => {
   const location = useLocation();
   const [getToken] = useGetTokenMutation();
   const [getUser] = useGetUserMutation();
-  const navigate = useNavigate();
+
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -28,10 +28,8 @@ const RequireUnAuth = () => {
         (userData) => {
 
           dispatch(setCredentials({ ...userData, }));
-          
-          if ('error' in userData) {
-            navigate('/login')
-          }
+
+
           return getUser();
 
         }

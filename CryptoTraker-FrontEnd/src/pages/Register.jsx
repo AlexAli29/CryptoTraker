@@ -1,6 +1,5 @@
 import React from 'react';
 import UserRegisterForm from '../Components/UserRegisterForm';
-import UserFormInput from '../Components/UI/UserFormInput';
 import { useNavigate } from 'react-router-dom';
 import { useRegisterMutation } from '../features/auth/authApiSlice';
 import { useRef } from 'react';
@@ -8,8 +7,7 @@ import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { setCredentials } from '../features/auth/authSlice';
-import UserLoginForm from '../Components/UserLoginForm';
-import cl from "../Styles/css/loginforminput.module.css"
+import cl from "../Styles/scss/loginforminput.module.scss"
 
 
 const Register = () => {

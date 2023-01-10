@@ -1,5 +1,5 @@
 import React from 'react';
-import mdl from '../../Styles/css/modal.module.css'
+import mdl from '../../Styles/scss/modal.module.scss'
 import CloseButton from './CloseButton';
 const Modal = ({ children, active, setActive, title }) => {
 
